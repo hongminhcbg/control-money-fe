@@ -1,0 +1,84 @@
+body {
+    
+}
+
+.wrapper {
+}
+
+.hero {
+    background-color: #F0F5E8;
+    height: 700px;
+    width: 620px;
+    margin: auto;
+    border: 2px solid #000000;
+    font-family: Noto Sans;
+    font-style: normal;
+    .profile-icon {
+        margin-left: 50px;
+        margin-top: 120px;
+    }
+
+    .form-username-password {
+        form {
+            display: grid;
+            grid-template-columns: auto;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-top: 25px;
+            .form-password {
+                display: grid;
+                grid-template-columns: auto;
+                margin-top: 51px;
+                p {
+                    font-weight: normal;
+                    font-size: 12px;
+                }                
+            }
+
+            .form-username {
+                display: grid;
+                grid-template-columns: auto;
+            }
+
+            label {
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 18px;
+                color: #666666;
+            }
+
+            #username {
+                font-size: 16px;
+                line-height: 24px; 
+                color: #666666;
+                margin-top: 8px;
+            }
+
+            #password {
+                font-size: 16px;
+                line-height: 24px; 
+                color: #666666;
+                margin-top: 8px;
+            }
+
+            #submit {
+                background-color: #6AA0D1;
+                width: 180px;
+                height: 51px;
+                margin-top: 25px;
+            }
+        }
+    }
+    .login-social {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-left: 20px;
+        #facebook {
+
+        }
+
+        #google {
+            margin-top: 20px;
+        }
+    }
+}
