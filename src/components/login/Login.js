@@ -1,10 +1,13 @@
 import { useState } from 'react';
-import {Form, Button} from 'react-bootstrap';
 import {useCookies} from 'react-cookie';
+import "../../css/main.css";
+import facebook  from '../../images/facebook.svg';
+import google from '../../images/google.svg';
+import profile from '../../images/profile.svg';
 
 function Login(){
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
+    const [email, setEmail] = useState("Enter username");
+    const [password, setPassword] = useState("Enter password");
     const [cookies, setCookie, removeCookie] = useCookies(['token']);
 
     async function loginHandler(event){
@@ -13,7 +16,7 @@ function Login(){
             'username': email,
             'password': password,
         };
-        //console.log('body login', JSON.stringify(body));
+        console.log(body);
         await fetch('http://localhost:8080/api/v1/account/login', {
             method: 'POST',
             headers: {
@@ -35,20 +38,32 @@ function Login(){
 
     return(
         <div>
-            <h1> This is login page </h1>
-            <Form>
-                <Form.Group className="mb-3" controlId="formGroupEmail">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" onChange={(e) => {setEmail(e.target.value)}} />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="formGroupPassword">
-                    <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" placeholder="Password" onChange={(e) => {setPassword(e.target.value)}} />
-                </Form.Group>
-                <Button variant="primary" type="submit" onClick={loginHandler}>
-                    Submit
-                </Button>
-            </Form>
+            <div className="wrapper">
+                <div className="hero">
+                    <div className="profile-icon">
+                        <img src={profile} alt="sss"/>
+                    </div>
+                    <div className="form-username-password">
+                        <form onSubmit={loginHandler}>
+                            <div className="form-username">
+                                <label for="username">Username</label>
+                                <input type="text" id="username" name="username" value={email} onChange={e => setEmail(e.target.value)}/> 
+                            </div>
+
+                            <div className="form-password">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password" value={password} placeholder={password} onChange={e => setPassword(e.target.value)}/>    
+                                <p>Your password is between 4 and 12 characters</p>
+                            </div>
+                            <input type="submit" value="Register" id="submit"/>
+                        </form>
+                    </div>
+                    <div className="login-social">
+                        <img src={google} alt="login google" id="google"/>
+                        <img src={facebook} alt="login facebook" id="facebook"/>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

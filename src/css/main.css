@@ -1,0 +1,85 @@
+.hero {
+  background-color: #F0F5E8;
+  height: 700px;
+  width: 620px;
+  margin: auto;
+  border: 2px solid #000000;
+  font-family: Noto Sans;
+  font-style: normal;
+}
+
+.hero .profile-icon {
+  margin-left: 50px;
+  margin-top: 120px;
+}
+
+.hero .form-username-password form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 25px;
+}
+
+.hero .form-username-password form .form-password {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  margin-top: 51px;
+}
+
+.hero .form-username-password form .form-password p {
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.hero .form-username-password form .form-username {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+}
+
+.hero .form-username-password form label {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #666666;
+}
+
+.hero .form-username-password form #username {
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+  margin-top: 8px;
+}
+
+.hero .form-username-password form #password {
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+  margin-top: 8px;
+}
+
+.hero .form-username-password form #submit {
+  background-color: #6AA0D1;
+  width: 180px;
+  height: 51px;
+  margin-top: 25px;
+}
+
+.hero .login-social {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  margin-left: 20px;
+}
+
+.hero .login-social #google {
+  margin-top: 20px;
+}
+/*# sourceMappingURL=main.css.map */

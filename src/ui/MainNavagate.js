@@ -7,11 +7,12 @@ import History from '../components/History';
 import Login from '../components/login/Login';
 import NewTransaction from '../components/NewTransaction';
 import {Navbar, Container, Nav} from 'react-bootstrap';
+import classes from './MainNavigate.module.css';
 
 function MainNavigate(){
     return(
         <div>
-            <Nav defaultActiveKey="/home" as="ul">
+            <Nav defaultActiveKey="/home" as="ul" className={classes.text}>
             <Nav.Item as="li">
                 <Nav.Link href="/">Home</Nav.Link>
             </Nav.Item>
