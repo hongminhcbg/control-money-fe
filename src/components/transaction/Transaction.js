@@ -1,13 +1,21 @@
-import {ListGroup} from 'react-bootstrap';
-
-function Transaction(props){
-    return (
-        <ListGroup horizontal={true} className="my-2" key={props.id}>
-        <ListGroup.Item variant="success">{props.money}</ListGroup.Item>
-        <ListGroup.Item variant="warning">{props.desc}</ListGroup.Item>
-        <ListGroup.Item>{props.tag}</ListGroup.Item>
-      </ListGroup>
-    )
+import { ListGroup } from 'react-bootstrap';
+import '../../css/detail.css';
+import done from "../../images/done_outline.svg";
+function Transaction(props) {
+  return (
+    <div className="detail">
+      <div className="image-detail">
+        <img src={done} alt="done" />
+      </div>
+      <div className="content">
+        <p className="content-title"> {props.tag} </p>
+        <p className="content-detail"> {props.desc}</p>
+      </div>
+      <div className="content-money">
+        <p className="content-title"> {'$ ' + props.money} </p>
+      </div>
+    </div>
+  )
 }
 
 export default Transaction;

@@ -12,7 +12,6 @@ function App() {
       <Router>
         <MainNavigate/>
         <div className="App">
-          <h1>This is header </h1>
         </div>
       </Router>
   );

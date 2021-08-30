@@ -1,0 +1,64 @@
+.wrapper {
+  margin: none;
+}
+
+.content-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.015em;
+  color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.content-detail {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+  letter-spacing: -0.015em;
+  color: #000000;
+}
+
+.hero-trans {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+}
+
+.hero-trans .detail {
+  background-color: #D6E0B8;
+  height: auto;
+  width: 626px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 90px auto 70px;
+      grid-template-columns: 90px auto 70px;
+  border: 1px solid #000000;
+  margin: 10px;
+}
+
+.hero-trans .detail .image-detail {
+  border-right: 1px solid #000000;
+}
+
+.hero-trans .detail .image-detail img {
+  display: block;
+  margin: auto;
+}
+
+.hero-trans .detail .content {
+  padding-left: 20px;
+  padding-right: 5px;
+}
+
+.hero-trans .detail .content-money {
+  margin: auto;
+  display: block;
+}
+/*# sourceMappingURL=detail.css.map */
